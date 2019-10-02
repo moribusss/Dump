@@ -1,11 +1,8 @@
-def inorder(root,val):
+def inorder(root):
 
-    if(root.left):
-        inorder(root.left,val)
+    if(root):
+        inorder(root.left)
 
-    if(root.data > val):
         print(root.data)
-        exit()
 
-    if(root.right):
-        inorder(root.right,val)
+        inorder(root.right)
